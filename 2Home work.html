@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        .left-panel {
+            width: 40%;
+            background: #dfe208;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .left-panel h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .left-panel p {
+            margin-bottom: 20px;
+        }
+        .host {
+            margin-top: 20px;
+        }
+        .host img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .host h3 {
+            font-size: 16px;
+        }
+        .right-panel {
+            width: 60%;
+            background: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-panel">
+            <h1>Analytics 101</h1>
+            <p>This free workshop shows you how to track important metrics in your business</p>
+            <div class="host">
+                <img src="https://i.pinimg.com/736x/3e/b1/f6/3eb1f656e2d378b262dfcab6d9f4d520.jpg" alt="Jane Smith">
+                <h3>Your host</h3>
+                <p>SUNGHOON, ENHYPEN</p>
+                <p>Jane Smith</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="form-container">
+                <h2>Register now</h2>
+                <form>
+                    <input type="text" id="fname" placeholder="First name" required>
+                    <input type="text" id="lname" placeholder="Last name" required>
+                    <input type="email" id="email" placeholder="Your email" required>
+                    <select required>
+                        <option value="" disabled selected>Choose a day</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>   
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
